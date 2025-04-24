@@ -23,13 +23,13 @@ async function loadLatestAnimes() {
 
 		const transformed = data.results.map((item): Anime => ({
 			id: item.id,
-			mal_id: item.malId,
+			mal_id: item.id,
 			name: item.title.english || item.title.romaji || 'Unknown Title',
 			japanese_name: item.title.native || item.title.romaji || 'Unknown',
 			type: item.type || 'TV',
 			aired_from: new Date().toISOString(),
 			aired_to: new Date().toISOString(),
-			cover: item.image,
+			cover: item.cover,
 			synopsis: item.description || 'No synopsis available.',
 			updated: new Date().toISOString(),
 			studios: ['Unknown Studio'], 
