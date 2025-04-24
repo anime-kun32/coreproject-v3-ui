@@ -3,7 +3,7 @@
     import ImageLoader from "$components/shared/image/image_loader.svelte";
     import ScrollArea from "$components/shared/scroll_area.svelte";
     import MyListAnimeDetails from "$components/tippies/my_list_anime_details.svelte";
-    import { latest_animes } from "$consumet/trending";
+    import { latest_animes } from "$consumet/latest";
     import { latest_episodes } from "$data/mock/latest_episodes";
     import { my_list } from "$data/mock/my_list";
     import { FormatDate } from "$functions/format_date";
