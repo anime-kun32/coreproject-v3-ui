@@ -14,25 +14,26 @@ export interface Anime {
 	episodes_count: number;
 }
 
-let latest_animes: Anime[] = [];
-
-export function getLatestAnimes() {
-	return latest_animes;
-}
+// Exported variable to hold the anime data
+export let latest_animes: Anime[] = [];
 
 async function loadLatestAnimes() {
 	try {
 		const res = await fetch('https://no-drab.vercel.app/meta/anilist/trending');
 		const data = await res.json();
 
-		latest_animes = data.results.map((item): Anime => ({
+		latest_animes = data.results.map((item: any): Anime => ({
 			id: item.id,
 			mal_id: item.id,
 			name: item.title.english || item.title.romaji || 'Unknown Title',
 			japanese_name: item.title.native || item.title.romaji || 'Unknown',
 			type: item.type || 'TV',
-			aired_from: item.startDate?.year ? new Date(`${item.startDate.year}-${item.startDate.month || 1}-${item.startDate.day || 1}`).toISOString() : new Date().toISOString(),
-			aired_to: item.endDate?.year ? new Date(`${item.endDate.year}-${item.endDate.month || 1}-${item.endDate.day || 1}`).toISOString() : new Date().toISOString(),
+			aired_from: item.startDate?.year
+				? new Date(`${item.startDate.year}-${item.startDate.month || 1}-${item.startDate.day || 1}`).toISOString()
+				: new Date().toISOString(),
+			aired_to: item.endDate?.year
+				? new Date(`${item.endDate.year}-${item.endDate.month || 1}-${item.endDate.day || 1}`).toISOString()
+				: new Date().toISOString(),
 			cover: item.cover || '',
 			synopsis: item.description || 'No synopsis available.',
 			updated: new Date().toISOString(),
@@ -45,5 +46,5 @@ async function loadLatestAnimes() {
 	}
 }
 
-// Auto-fetch on module load
+// Auto-load when the module is imported
 loadLatestAnimes();
