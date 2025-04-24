@@ -4,7 +4,7 @@
     import ScrollArea from "$components/shared/scroll_area.svelte";
     import MyListAnimeDetails from "$components/tippies/my_list_anime_details.svelte";
     import { latest_animes } from "$consumet/latest";
-    import { latest_episodes } from "$data/mock/latest_episodes";
+    import { latest_episodes } from "$consumet/newEpisodes";
     import { my_list } from "$data/mock/my_list";
     import { FormatDate } from "$functions/format_date";
     import { OpengraphGenerator } from "$functions/opengraph";
