@@ -1,82 +1,79 @@
-export interface Episode {
-	id: number;
-	name: string;
-	cover: string;
-	episode_number: number;
-	release_date: string;
-	synopsis: string;
+export interface LatestEpisode {
+  id: number;
+  name: string;
+  cover: string;
+  episode_number: number;
+  release_date: string;
+  synopsis: string;
 }
 
-export const latest_episodes: Episode[] = [];
+export const fetchLatestEpisodes = async (): Promise<LatestEpisode[]> => {
+  const query = `
+    query ($page: Int, $perPage: Int, $now: Int) {
+      Page(page: $page, perPage: $perPage) {
+        airingSchedules(sort: TIME_DESC, airingAt_lesser: $now) {
+          episode
+          airingAt
+          media {
+            id
+            title {
+              romaji
+              english
+            }
+            coverImage {
+              large
+            }
+            description(asHtml: false)
+          }
+        }
+      }
+    }
+  `;
 
-async function loadLatestEpisodes() {
-	const query = `
-		query ($page: Int, $perPage: Int, $now: Int) {
-			Page(page: $page, perPage: $perPage) {
-				airingSchedules(sort: TIME_DESC, airingAt_lesser: $now) {
-					episode
-					airingAt
-					media {
-						id
-						title {
-							romaji
-							english
-						}
-						coverImage {
-							large
-						}
-						description(asHtml: false)
-					}
-				}
-			}
-		}
-	`;
+  const now = Math.floor(Date.now() / 1000);
 
-	const now = Math.floor(Date.now() / 1000);
+  const variables = {
+    page: 1,
+    perPage: 50,
+    now,
+  };
 
-	const variables = {
-		page: 1,
-		perPage: 50,
-		now
-	};
+  try {
+    const response = await fetch("https://graphql.anilist.co", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({ query, variables }),
+    });
 
-	try {
-		const res = await fetch("https://graphql.anilist.co", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-				Accept: "application/json"
-			},
-			body: JSON.stringify({ query, variables })
-		});
+    const json = await response.json();
+    const allEpisodes = json?.data?.Page?.airingSchedules || [];
 
-		const json = await res.json();
-		const episodes = json.data.Page.airingSchedules;
+    const seen = new Set<string>();
+    const latest_episodes: LatestEpisode[] = allEpisodes
+      .filter((ep: any) => {
+        const key = `${ep.media.id}-${ep.episode}`;
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      })
+      .map((ep: any) => ({
+        id: ep.media.id,
+        name: ep.media.title.english || ep.media.title.romaji || "Unknown",
+        cover: ep.media.coverImage.large,
+        episode_number: ep.episode,
+        release_date: new Date(ep.airingAt * 1000).toISOString(),
+        synopsis: ep.media.description || "No synopsis available.",
+      }));
 
-		// Deduplicate by anime ID + episode number
-		const seen = new Set();
-		const uniqueEpisodes = episodes.filter(ep => {
-			const key = `${ep.media.id}-${ep.episode}`;
-			if (seen.has(key)) return false;
-			seen.add(key);
-			return true;
-		});
+    return latest_episodes;
+  } catch (err) {
+    console.error("Error fetching from AniList:", err);
+    return [];
+  }
+};
 
-		// Transform and store
-		const transformed = uniqueEpisodes.map((ep): Episode => ({
-			id: ep.media.id,
-			name: ep.media.title.english || ep.media.title.romaji || "Unknown",
-			cover: ep.media.coverImage.large,
-			episode_number: ep.episode,
-			release_date: new Date(ep.airingAt * 1000).toISOString(),
-			synopsis: ep.media.description || "No synopsis available."
-		}));
-
-		latest_episodes.push(...transformed);
-	} catch (error) {
-		console.error("Error fetching latest episodes from AniList:", error);
-	}
-}
-
-// Auto-run when imported
-loadLatestEpisodes();
+// If you want to auto-export it directly (e.g. for SSR or quick test)
+export const latest_episodes = await fetchLatestEpisodes();
