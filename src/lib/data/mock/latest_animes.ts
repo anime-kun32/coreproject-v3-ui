@@ -1,212 +1,95 @@
 export const latest_animes = [
-  {
-    "id": 178680,
-    "mal_id": 59160,
-    "name": "WIND BREAKER Season 2",
-    "japanese_name": "WIND BREAKER Season 2",
-    "type": "TV",
-    "aired_from": "2025-01-01T00:00:00.000Z",
-    "aired_to": "2025-01-01T00:00:00.000Z",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178680-9HupCDo647QU.jpg",
-    "synopsis": "The second season of WIND BREAKER.\n\nWelcome back to Furin High School, an institution infamous for its population of brawny brutes who solve every conflict with a show of strength. Some of the students even formed a group, Bofurin, which protects the town. Haruka Sakura, a first-year student who moved in from out of town, is only interested in one thing: fighting his way to the top! \n\n(Source: Crunchyroll, edited)",
-    "updated": "2025-04-25T07:52:05.721Z",
-    "studios": [
-      "ufotable"
-    ],
-    "genres": [
-      "Action",
-      "Comedy",
-      "Drama"
-    ],
-    "episodes_count": 12
-  },
-  {
-    "id": 175872,
-    "mal_id": 58359,
-    "name": "The Brilliant Healer's New Life in the Shadows",
-    "japanese_name": "一瞬で治療していたのに役立たずと追放された天才治癒師、闇ヒーラーとして楽しく生きる",
-    "type": "TV",
-    "aired_from": "2025-01-01T00:00:00.000Z",
-    "aired_to": "2025-01-01T00:00:00.000Z",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx175872-d55nfiC4WWHO.jpg",
-    "synopsis": "Banished as “useless,” Zenos, a self-taught healer from the slums, turns despair into defiance and opens a secret clinic in the city’s shadows. With unlicensed, unmatched magic, he cures, comforts, and rights wrongs, quietly becoming a legend. But as his power grows, even the royal palace takes notice. Can he buck the odds and heal a world that cast him aside?\n\n(Source: Crunchyroll)",
-    "updated": "2025-04-25T07:52:05.721Z",
-    "studios": [
-      "ufotable"
-    ],
-    "genres": [
-      "Action",
-      "Comedy",
-      "Fantasy"
-    ],
-    "episodes_count": 12
-  },
-  {
-    "id": 21,
-    "mal_id": 21,
-    "name": "ONE PIECE",
-    "japanese_name": "ONE PIECE",
-    "type": "TV",
-    "aired_from": "1999-01-01T00:00:00.000Z",
-    "aired_to": "1999-01-01T00:00:00.000Z",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg",
-    "synopsis": "Gold Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the location of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an unlimited amount of riches and fame), and quite possibly the most coveted of titles for the person who found it, the title of the Pirate King.\nEnter Monkey D. Luffy, a 17-year-old boy that defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate who ransacks villages for fun, Luffy’s reason for being a pirate is one of pure wonder; the thought of an exciting adventure and meeting new and intriguing people, along with finding One Piece, are his reasons of becoming a pirate. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach One Piece.\n*This includes following special episodes:\n- Chopperman to the Rescue! Protect the TV Station by the Shore! (Episode 336)\n- The Strongest Tag-Team! Luffy and Toriko's Hard Struggle! (Episode 492)\n- Team Formation! Save Chopper (Episode 542)\n- History's Strongest Collaboration vs. Glutton of the Sea (Episode 590)\n- 20th Anniversary! Special Romance Dawn (Episode 907)",
-    "updated": "2025-04-25T07:52:05.721Z",
-    "studios": [
-      "ufotable"
-    ],
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Drama",
-      "Fantasy"
-    ],
-    "episodes_count": 1126
-  },
-  {
-    "id": 183161,
-    "mal_id": 60146,
-    "name": "The Beginning After the End",
-    "japanese_name": "最強の王様、二度目の人生は 何をする?",
-    "type": "TV",
-    "aired_from": "2025-01-01T00:00:00.000Z",
-    "aired_to": "2025-01-01T00:00:00.000Z",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/183161-Vmw9QT27k3sM.jpg",
-    "synopsis": "After a mysterious death, King Grey is reborn as Arthur Leywin on the magical continent of Dicathen. Although he enters his second life as a baby, his previous wisdom remains. He begins to master magic and forge his own path as the years go by, seeking to correct the mistakes of his past life. \n\n(Source: Crunchyroll)",
-    "updated": "2025-04-25T07:52:05.721Z",
-    "studios": [
-      "ufotable"
-    ],
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "episodes_count": 24
-  },
-  {
-    "id": 179694,
-    "mal_id": 59360,
-    "name": "Rock is a Lady’s Modesty",
-    "japanese_name": "ロックは淑女の嗜みでして",
-    "type": "TV",
-    "aired_from": "2025-01-01T00:00:00.000Z",
-    "aired_to": "2025-01-01T00:00:00.000Z",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/179694-wEDYf9cMXKSm.jpg",
-    "synopsis": "At an elite all-girls' academy where refined young ladies gather, Lilisa Suzunomiya, now the daughter of a real estate tycoon after her mother remarried, is forced to abandon her guitar and rock music to fit in. However, her passion is reignited by sounds from the old school building, where she meets a skilled drummer who shares her love for rock. Together, they embrace their inner rockstars, elegantly clashing and shouting their way through the academy in this captivating tale of grace and rebellion.\n\n(Source: HIDIVE)",
-    "updated": "2025-04-25T07:52:05.721Z",
-    "studios": [
-      "ufotable"
-    ],
-    "genres": [
-      "Drama",
-      "Music"
-    ],
-    "episodes_count": 4
-  },
-  {
-    "id": 177120,
-    "mal_id": 58725,
-    "name": "A Ninja and an Assassin Under One Roof",
-    "japanese_name": "忍者と殺し屋のふたりぐらし",
-    "type": "TV",
-    "aired_from": "2025-01-01T00:00:00.000Z",
-    "aired_to": "2025-01-01T00:00:00.000Z",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/177120-AeL6hv0brH0l.jpg",
-    "synopsis": "On the way home from school one day, Konoha Koga rescues Satoko Kusagakure, a ninja who escaped her village. Soon, pursuers from the village show up in search of Satoko only to be deftly dealt with by Konoha. As it turns out, the unassuming high schooler is actually an assassin. Thus, the potentially cutthroat cohabitation of a ninja and an assassin begins!\n\n(Source: Crunchyroll)",
-    "updated": "2025-04-25T07:52:05.721Z",
-    "studios": [
-      "ufotable"
-    ],
-    "genres": [
-      "Comedy"
-    ],
-    "episodes_count": 12
-  },
-  {
-    "id": 179965,
-    "mal_id": 59457,
-    "name": "Please Put Them On, Takamine-san",
-    "japanese_name": "履いてください、鷹峰さん",
-    "type": "TV",
-    "aired_from": "2025-01-01T00:00:00.000Z",
-    "aired_to": "2025-01-01T00:00:00.000Z",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179965-EwqzG3xSyxwc.jpg",
-    "synopsis": "Takane Takamine is the goddess of her high school. With perfect grades, athletic prowess, and unrivaled beauty, this student council president is the apple of everyone's eye-including Koushi Shirota, a below-average student with no friends or social prospects whatsoever. But he'll soon find out the secret behind Takamine's unbelievable success-her underwear! When she strips, she can undo any of her past actions, and now that Koushi knows, Takamine won't let him off so easy...\n\n(Source: Yen Press)",
-    "updated": "2025-04-25T07:52:05.721Z",
-    "studios": [
-      "ufotable"
-    ],
-    "genres": [
-      "Comedy",
-      "Ecchi",
-      "Romance",
-      "Slice of Life"
-    ],
-    "episodes_count": 12
-  },
-  {
-    "id": 176301,
-    "mal_id": 58514,
-    "name": "The Apothecary Diaries Season 2",
-    "japanese_name": "薬屋のひとりごと 第2期",
-    "type": "TV",
-    "aired_from": "2025-01-01T00:00:00.000Z",
-    "aired_to": "2025-01-01T00:00:00.000Z",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/176301-GkuTF1YTT6b2.jpg",
-    "synopsis": "The second season of Kusuriya no Hitorigoto.\n\nMaomao and Jinshi face palace intrigue as a pregnant concubine's safety and a looming conspiracy collide.\n\n(Source: Crunchyroll News)",
-    "updated": "2025-04-25T07:52:05.721Z",
-    "studios": [
-      "ufotable"
-    ],
-    "genres": [
-      "Drama",
-      "Mystery"
-    ],
-    "episodes_count": 24
-  },
-  {
-    "id": 167336,
-    "mal_id": 56038,
-    "name": "LAZARUS",
-    "japanese_name": "ラザロ",
-    "type": "TV",
-    "aired_from": "2025-01-01T00:00:00.000Z",
-    "aired_to": "2025-01-01T00:00:00.000Z",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/167336-IzjrGm2QpTie.jpg",
-    "synopsis": "The year is 2052 — an era of unprecedented peace and prosperity prevails across the globe. The reason for this: mankind has been freed from sickness and pain. Nobel Prize winning neuroscientist Dr. Skinner has developed a miracle cure-all drug with no apparent drawbacks called Hapuna. Hapuna soon becomes ubiquitous… and essential. However, soon after Hapuna is officially introduced, Dr. Skinner vanishes.\n\nThree years later, the world has moved on. But Dr. Skinner has returned — this time, as a harbinger of doom. Skinner announces that Hapuna has a short half-life. Everyone who has taken it will die approximately three years later. Death is coming for this sinful world — and coming soon.\n\nAs a response to this threat, a special task force of 5 agents is gathered from across the world to save humanity from Skinner’s plan. This group is called “Lazarus.” Can they find Skinner and develop a vaccine before time runs out?\n\n(Source: Adult Swim)",
-    "updated": "2025-04-25T07:52:05.721Z",
-    "studios": [
-      "ufotable"
-    ],
-    "genres": [
-      "Action",
-      "Sci-Fi"
-    ],
-    "episodes_count": 13
-  },
-  {
-    "id": 181244,
-    "mal_id": 59833,
-    "name": "KONOSUBA -God's Blessing on This Wonderful World! 3 -BONUS STAGE-",
-    "japanese_name": "この素晴らしい世界に祝福を！３ーBONUS STAGEー",
-    "type": "OVA",
-    "aired_from": "2025-01-01T00:00:00.000Z",
-    "aired_to": "2025-01-01T00:00:00.000Z",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181244-ICHU0FzIhEAY.jpg",
-    "synopsis": "Announced during the Konosuba Radio public recording special: OVA episodes for the third season of Kono Subarashii Sekai ni Shukufuku wo!\nEpisodes:\n\n1) Redstream Explosion!\nWhile Kazuma and his mates are having dinner at the guild, Luna, a receptionist, brings them a request. They need Megumin's explosion spell to face a typhoon approaching the city of Axel. Yunyun and Wiz also decide to participate, and the morale of the adventurers soars! On the day of the decisive battle, Kazuma sees the adventurers preparing for battle, and is surprised to find that they were all...\n\n2) Nisemono Chuui! (Beware of imposters!)\nOne winter day. While Kazuma was enjoying a grilled skewer at a food stall in the town of Axel, an adventurer approached him. The man said he was looking for an adventurer named “Kazuma Satou.\" In exchange for dinner, Kazuma told them the legend of “Kazuma Satou,” which moved the man and his party of three female adventurers to tears...\n\n(Source: Crunchyroll News, edited) \nNote: The anime was pre-screened in Japan theatrically for 2 weeks starting on March 14, 2025.",
-    "updated": "2025-04-25T07:52:05.721Z",
-    "studios": [
-      "ufotable"
-    ],
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Ecchi",
-      "Fantasy"
-    ],
-    "episodes_count": 2
-  }
-]
+    {
+        id: 1,
+        mal_id: 38000,
+        name: "Demon Slayer",
+        japanese_name: "Kimetsu Yo Yaiba",
+        type: "TV",
+        aired_from: "2023-04-20T15:38:51.162Z",
+        aired_to: "2023-04-20T15:38:51.162Z",
+        cover: "/images/DemonSlayer-cover.avif",
+        synopsis: `It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a
+				living, finds his family slaughtered by a demon. To make matters worse, his younger sister
+				Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his
+				sister back into a human, and kill the demon that massacred his family.`,
+        updated: "2023-04-20T15:38:51.162Z",
+        studios: ["ufotable"],
+        genres: ["Sic-Fic", "Action", "Echhi"],
+        episodes_count: 26
+    },
+    {
+        id: 2,
+        mal_id: 12189,
+        name: "Hyouka",
+        japanese_name: "Ice Cream/Frozen Dessert",
+        type: "TV",
+        aired_from: "2023-08-20T15:38:51.162Z",
+        cover: "/images/Hyouka-bg.avif",
+        synopsis: `High school freshman Houtarou Oreki has but one goal: to lead a gray life while conserving as much energy as he can. Unfortunately, his peaceful days come to an end when his older sister, Tomoe, forces him to save the memberless Classics Club from disbandment.
+        Luckily, Oreki's predicament seems to be over when he heads to the clubroom and discovers that his fellow first-year, Eru Chitanda, has already become a member. However, despite his obligation being fulfilled, Oreki finds himself entangled by Chitanda's curious and bubbly personality, soon joining the club of his own volition.
+
+			Hyouka follows the four members of the Classics Club—including Oreki's friends Satoshi Fukube and Mayaka Ibara—as they, driven by Chitanda's insatiable curiosity, solve the trivial yet intriguing mysteries that permeate their daily lives.`,
+        updated: "2023-03-11T02:37:40.790Z",
+        studios: ["Kyoto animations"],
+        genres: ["Sic-Fic", "Action", "Echhi"],
+        episodes_count: 9
+    },
+    {
+        id: 3,
+        mal_id: 23273,
+        name: "You Lie in April",
+        japanese_name: "Shigatsu wa Kimi no Uso",
+        type: "TV",
+        aired_from: "2014-11-20T15:38:51.162Z",
+        cover: "/images/YourLieInApril-bg.avif",
+        synopsis: `Kousei Arima is a child prodigy known as the "Human Metronome" for playing the piano with precision and perfection. Guided by a strict mother and rigorous training, Kousei dominates every competition he enters, earning the admiration of his musical peers and praise from audiences. When his mother suddenly passes away, the subsequent trauma makes him unable to hear the sound of a piano, and he never takes the stage thereafter. \n
+
+			Nowadays, Kousei lives a quiet and unassuming life as a junior high school student alongside his friends Tsubaki Sawabe and Ryouta Watari. While struggling to get over his mother's death, he continues to cling to music. His monochrome life turns upside down the day he encounters the eccentric violinist Kaori Miyazono, who thrusts him back into the spotlight as her accompanist. Through a little lie, these two young musicians grow closer together as Kaori tries to fill Kousei's world with color.`,
+        updated: "2023-03-11T02:37:40.790Z",
+        studios: ["A-1 Pictures"],
+        genres: ["Sic-Fic", "Action", "Echhi"],
+        episodes_count: 22
+    },
+    {
+        id: 4,
+        mal_id: 16498,
+        name: "Attack on Titan",
+        japanese_name: "Shingeki no Kyojin",
+        type: "TV",
+        aired_from: "2014-11-20T15:38:51.162Z",
+        cover: "/images/AttackOnTitan-bg.avif",
+        synopsis: `Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called Titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter. However, that fragile calm is soon shattered when a colossal Titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations.`,
+        updated: "2013-04-7T02:37:40.790Z",
+        studios: ["Wit Studio"],
+        genres: ["Sic-Fic", "Action", "Echhi"],
+        episodes_count: 25
+    },
+    {
+        id: 5,
+        mal_id: 40748,
+        name: "Jujutsu Kaisen",
+        japanese_name: "Sorcery Fight",
+        type: "TV",
+        aired_from: "2014-11-20T15:38:51.162Z",
+        cover: "/images/JujutsuKaisen.avif",
+        synopsis: `Idly indulging in baseless paranormal activities with the Occult Club, high schooler Yuuji Itadori spends his days at either the clubroom or the hospital, where he visits his bedridden grandfather. However, this leisurely lifestyle soon takes a turn for the strange when he unknowingly encounters a cursed item. Triggering a chain of supernatural occurrences, Yuuji finds himself suddenly thrust into the world of Curses—dreadful beings formed from human malice and negativity—after swallowing the said item, revealed to be a finger belonging to the demon Sukuna Ryoumen, the "King of Curses."`,
+        updated: "2020-10-3T02:37:40.790Z",
+        studios: ["MAPPA"],
+        genres: ["Sic-Fic", "Action", "Echhi"],
+        episodes_count: 24
+    },
+    {
+        id: 6,
+        mal_id: 1535,
+        name: "Death Note",
+        japanese_name: "Desu Nōto",
+        type: "TV",
+        aired_from: "2020-11-20T15:38:51.162Z",
+        cover: "/images/DeathNote-bg.avif",
+        synopsis: `Brutal murders, petty thefts, and senseless violence pollute the human world. In contrast, the realm of death gods is a humdrum, unchanging gambling den. The ingenious 17-year-old Japanese student Light Yagami and sadistic god of death Ryuk share one belief: their worlds are rotten. For his own amusement, Ryuk drops his Death Note into the human world. Light stumbles upon it, deeming the first of its rules ridiculous: the human whose name is written in this note shall die. However, the temptation is too great, and Light experiments by writing a felon's name, which disturbingly enacts his first murder.`,
+        updated: "2020-10-3T02:37:40.790Z",
+        studios: [" Madhouse"],
+        genres: ["Sic-Fic", "Action", "Echhi"],
+        episodes_count: 24
+    }
+];
